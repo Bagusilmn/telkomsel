@@ -17,3 +17,4 @@ sentence-transformers
 unstructured
 python-docx
 openai
+langchain_community
