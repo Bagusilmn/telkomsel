@@ -3,3 +3,13 @@ geopandas
 pandas
 folium
 streamlit_folium
+os
+branca.colormap
+shapely.geometry
+langchain.document_loaders
+langchain.text_splitter
+langchain.vectorstores
+langchain.embeddings
+langchain.chat_models
+langchain.chains
+langchain.prompts
