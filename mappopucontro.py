@@ -7,11 +7,11 @@ import branca.colormap as cm
 from shapely.geometry import Point
 
 def map_path() :
-    shapefile_path = r"D:\Magang telkom\coba\[LapakGIS.com] KAB. JEMBER\ADMINISTRASIDESA_AR_25K.shp"
+    shapefile_path = r"[LapakGIS.com] KAB. JEMBER\ADMINISTRASIDESA_AR_25K.shp"
     return gpd.read_file(shapefile_path)
 
 def map_path2() :
-    csv_path = "D:/Magang telkom/coba/Dataset_PetaKabJember - Sheet1.csv"
+    csv_path = "Dataset_PetaKabJember - Sheet1.csv"
     return pd.read_csv(csv_path)
 
 def kecamatan_list() :
