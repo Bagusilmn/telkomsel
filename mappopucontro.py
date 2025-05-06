@@ -7,7 +7,7 @@ import branca.colormap as cm
 from shapely.geometry import Point
 
 def map_path() :
-    shapefile_path = r"[LapakGIS.com] KAB. JEMBER\ADMINISTRASIDESA_AR_25K.shp"
+    shapefile_path = r"[LapakGIS.com] KAB. JEMBER/ADMINISTRASIDESA_AR_25K.shp"
     return gpd.read_file(shapefile_path)
 
 def map_path2() :
