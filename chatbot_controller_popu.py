@@ -9,7 +9,7 @@ from langchain.prompts import PromptTemplate
 import streamlit as st
 
 # Set API Key
-# os.environ["OPENAI_API_KEY"] = "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"
+# os.environ["OPENAI_API_KEY"] = "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"
 
 @st.cache_resource
 def load_chatbot():
