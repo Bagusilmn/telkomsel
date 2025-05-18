@@ -11,10 +11,3 @@ Authlib
 folium
 pandas
 numpy
-langchain
-faiss-cpu
-sentence-transformers
-unstructured
-python-docx
-openai
-langchain_community
