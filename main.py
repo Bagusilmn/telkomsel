@@ -24,23 +24,6 @@ with colDesa:
 with colProduct:
     selected_Product = st.selectbox("Pilih product", ["Semua"] + productlist, index=0, key="product")
 
-# Div For Map and Recomendation
-colMap, colText = st.columns([0.65, 0.35])
-with colMap :
-    map(st.session_state['kecamatan'], st.session_state['desa'])
-    index_kecamatan = kecamatanList.index(st.session_state.get("kecamatan"))
-with colText :
-    # ==== Chatbot Produk Telkomsel ====
-    with st.container(border=True, height=600):
-        st.title(f"kec. {selected_kecamatan} desa {selected_desa}")
-        st.caption("Rekomendasi")
-        
-        query = f"Berikan rekomendasi pilihan paket internet pada {selected_Product} di kecamatan {selected_kecamatan} desa {selected_desa} berdasarkan jumlah penduduk, pendidikan dan pekerjaan sesuai dengan tingkat ekonomi yang ada disitu, dan berikan alasannya"
-        qa = load_chatbot()
 
-        if query:
-            with st.spinner("SSABAR SUMPAHH RODOK LEMOTTTT"):
-                result = get_chatbot_response(qa, query)
-
-                # st.markdown("### 🧠 ini dia jawabannya gesss:")
-                st.markdown(result["result"])
+map(st.session_state['kecamatan'], st.session_state['desa'])
+index_kecamatan = kecamatanList.index(st.session_state.get("kecamatan"))
