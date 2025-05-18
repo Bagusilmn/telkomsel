@@ -4,7 +4,6 @@ import streamlit as st
 # import numpy as np
 import os as os
 from mappopucontro import *
-from chatbot_controller_popu import load_chatbot, get_chatbot_response
 
 gdf = map_path()
 kecamatanList = kecamatan_list()
